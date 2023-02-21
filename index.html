@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="https://icons8.com/" />
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Henry</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">START</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACT ME</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.jpeg" alt="" />
+        </div>
+        <h1>Henry Peralta Briceño</h1>
+        <h2>Web Full Stack Developer</h2>
+        <div class="redes">
+          <a
+            href="https://www.linkedin.com/in/henry-peralta-brice%C3%B1o-420127225/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/HenryPB123"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.talent.soyhenry.com/app/me"
+            ><i class="fa-solid fa-h"></i
+          ></a>
+          <a href="https://wa.link/4ln2yq"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>About Me</h2>
+        <p>
+          <span>Hi, I'm Henry Peralta Briceño.</span>Since 2021 I have been
+          interested in the field of web development, I started my training and
+          today I can say that I am a FULL STACK WEB DEVELOPER. With a lot of
+          effort and dedication, I managed to obtain my degree in an area that
+          is to my liking. Before this process I worked in areas that are not
+          related to the area of programming. I am a Construction Technician and
+          I worked in this field until 2012, then I started a company dedicated
+          to the food production area, which I manage to this day. Working in
+          different areas allows me to have a broader field of vision than what
+          a client may need. I am a serious, honest, loyal person and above all
+          willing to take on new challenges.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Personal Information</h3>
+            <ul>
+              <li>
+                <strong>Birthday</strong>
+                126-02-1986
+              </li>
+              <li>
+                <strong>Cell Phone</strong>
+                057 3133030353
+              </li>
+              <li>
+                <strong>Email</strong>
+                mahe2di@gamil.com
+              </li>
+
+              <li>
+                <strong>Location</strong>
+                Villavicencio, Meta, Colombia
+              </li>
+              <li>
+                <strong>Position</strong>
+                <span>WEB DEVELOPER FULL STACK</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Interests</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSIC</span>
+              </div>
+
+              <div class="interes">
+                <i class="fa-solid fa-tv"></i>
+                <span>TV</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>CARS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>TRAVEL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="link"
+          href="./docs/CV-Henry.pdf"
+          download="CV-Henry"
+          title="Start download"
+        >
+          <button>
+            Download CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <div class="col_skills">
+          <div class="row_skills"><h2>Skills</h2></div>
+          <div class="row_skills">
+            <div class="col_a">
+              <div class="col_a">
+                <div class="row_skills">
+                  <h3>Technical Skills</h3>
+                  <br />
+                  <div class="row_a">
+                    <div class="con_in">
+                      <div><b>JavaScript</b></div>
+                      <div><b>HTML</b></div>
+                      <div><b>CSS</b></div>
+                      <div><b>Bootstrap</b></div>
+                      <div><b>Github</b></div>
+                    </div>
+                    <div class="con_in">
+                      <div><b>Node</b></div>
+                      <div><b>React</b></div>
+                      <div><b>Redux</b></div>
+                      <div><b>SQL</b></div>
+                      <div><b>Sequelize</b></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col_a">
+                <div class="row_skills">
+                  <h3>Soft Skills</h3>
+                  <br />
+                  <div class="row_a">
+                    <div class="con_in">
+                      <div class="con_item"><b>Seriousnes</b></div>
+                      <div class="con_item"><b>Honesty</b></div>
+                      <div class="con_item"><b>Loyalty</b></div>
+                      <div class="con_item"><b>Tenacity</b></div>
+                    </div>
+                    <div class="con_in">
+                      <div class="con_item"><b>Creativity</b></div>
+                      <div class="con_item"><b>Dedication</b></div>
+                      <div class="con_item"><b>Teamwork</b></div>
+                      <div class="con_item"><b>Persistence</b></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Education</h3>
+            <div class="item izq">
+              <h4>Full Stack Web Developer</h4>
+              <span class="casa">Henry - IT Education Academy</span>
+              <span class="fecha">01/2022 - 01/2023,</span>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Construction Specialist Technician</h4>
+              <span class="casa">CENANFO Educational Institution</span>
+              <span class="fecha">01/2010 - 01/2012,</span>
+
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Technical Assistant in Construction</h4>
+              <span class="casa">National Learning Service (SENA)</span>
+              <span class="fecha">02/2005 - 06/2007,</span>
+
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Work experience</h3>
+            <div class="item der">
+              <h4>Full Stack Web Developer</h4>
+              <span class="casa">Bootcamp Henry</span>
+              <span class="fecha">01/2022 - 01/2023,</span>
+              <p>
+                Institute dedicated to training in web development and
+                programming.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Independent Business Owner</h4>
+              <span class="casa">Vittoria Backery</span>
+              <span class="fecha">01/2010 - Present</span>
+              <p>
+                Company dedicated to the manufacture and distribution of food
+                products.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Construction Assistant Technician</h4>
+              <span class="casa">Independent Worker</span>
+              <span class="fecha">01/2004 - 12/2009,</span>
+              <p>Support and supervision of small civil construction works.</p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img
+              class="img_i"
+              src="./media/Countries/Countries App - Google Chrome 16_2_2023 17_33_02.png"
+              alt="img1"
+            />
+            <div class="overlay">
+              <h3>Countries App</h3>
+              <button>Watch Video</button>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              class="img_i"
+              src="./media/EasyOrder/Vite + React - Google Chrome 16_2_2023 16_59_54.png"
+              alt="img2"
+            />
+            <div class="overlay">
+              <h3>EasyOrder App</h3>
+              <button>Watch Video</button>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              class="img_i"
+              src="./media/Food/Food App - Google Chrome 16_2_2023 18_41_36.png"
+              alt="img3"
+            />
+            <div class="overlay">
+              <h3>Food App</h3>
+              <button>Watch Video</button>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img
+              class="img_i"
+              src="./media/Pokemons/Pokemons-App - Google Chrome 16_2_2023 18_47_13.png"
+              alt="img4"
+            />
+            <div class="overlay">
+              <h3>Poke App</h3>
+              <button>Watch Video</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACT</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Nicaragua 159, San Rafael Mza
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: 2384 - 4343443
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: cw@example.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-skype"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
