@@ -73,7 +73,7 @@
       <div class="contenido-seccion">
         <h2>About Me</h2>
         <p>
-          <span>Hi, I'm Henry Peralta Briceño.</span>Since 2021 I have been
+          <span>Hi, I'm Henry Peralta Briceño.</span> Since 2021 I have been
           interested in the field of web development, I started my training and
           today I can say that I am a FULL STACK WEB DEVELOPER. With a lot of
           effort and dedication, I managed to obtain my degree in an area that
@@ -93,15 +93,15 @@
             <ul>
               <li>
                 <strong>Birthday</strong>
-                126-02-1986
+                26-02-1986
               </li>
               <li>
                 <strong>Cell Phone</strong>
-                057 3133030353
+                +57 3133030353
               </li>
               <li>
                 <strong>Email</strong>
-                mahe2di@gamil.com
+                mahe2di@gmail.com
               </li>
 
               <li>
@@ -289,48 +289,61 @@
         <h2>PORTFOLIO</h2>
         <div class="galeria">
           <div class="proyecto">
-            <img
-              class="img_i"
-              src="./media/Countries/Countries App - Google Chrome 16_2_2023 17_33_02.png"
-              alt="img1"
-            />
-            <div class="overlay">
-              <h3>Countries App</h3>
-              <button>Watch Video</button>
+            <div class="video-countries">
+              <iframe
+                src="https://www.youtube.com/embed/ZVYA1SbbWJQ"
+                title="Countries-App"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
+            <h3>Countries App</h3>
+            <br />
           </div>
+
           <div class="proyecto">
-            <img
-              class="img_i"
-              src="./media/EasyOrder/Vite + React - Google Chrome 16_2_2023 16_59_54.png"
-              alt="img2"
-            />
-            <div class="overlay">
-              <h3>EasyOrder App</h3>
-              <button>Watch Video</button>
+            <div class="video-countries">
+              <iframe
+                src="https://www.youtube.com/embed/w_7ZHGczulA"
+                title="Food-App"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
+            <h3>Food App</h3>
+            <br />
           </div>
+
           <div class="proyecto">
-            <img
-              class="img_i"
-              src="./media/Food/Food App - Google Chrome 16_2_2023 18_41_36.png"
-              alt="img3"
-            />
-            <div class="overlay">
-              <h3>Food App</h3>
-              <button>Watch Video</button>
+            <div class="video-countries">
+              <iframe
+                src="https://www.youtube.com/embed/D5MBUN5Dbqk"
+                title="EasyOrder-App"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <h3>EasyOrder App</h3>
+            <br />
           </div>
+
           <div class="proyecto">
-            <img
-              class="img_i"
-              src="./media/Pokemons/Pokemons-App - Google Chrome 16_2_2023 18_47_13.png"
-              alt="img4"
-            />
-            <div class="overlay">
-              <h3>Poke App</h3>
-              <button>Watch Video</button>
+            <div class="video-countries">
+              <iframe
+                src="https://www.youtube.com/embed/Dz3ARPuUM08"
+                title="Pokemon-App"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
+
+            <h3>Pokemons App</h3>
+            <br />
           </div>
         </div>
       </div>
@@ -342,23 +355,37 @@
         <h2>CONTACT</h2>
         <div class="fila">
           <!-- Formulario -->
-          <div class="col">
-            <input type="text" placeholder="Tú Nombre" />
-            <input type="text" placeholder="Número telefónico" />
-            <input type="text" placeholder="Dirección de correo" />
-            <input type="text" placeholder="Tema" />
+          <form
+            action="https://formsubmit.co/mahe2di@gmail.com"
+            method="POST"
+            class="col"
+          >
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input
+              type="number"
+              name="PhoneNumber"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="email" name="E-mail" placeholder="E-mail" required />
+            <input type="text" name="Subject" placeholder="Subject" required />
             <textarea
-              name=""
+              name="Message"
               id=""
               cols="30"
               rows="10"
-              placeholder="Mensaje"
+              placeholder="Message"
+              required
             ></textarea>
             <button>
-              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              Send Message <i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
-          </div>
+
+            <!-- Esta parte del code es creada con la ayuda de una api "formsubmit.co" -->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/" />
+            <input type="hidden" name="_captcha" value="false" />
+          </form>
           <!-- Mapa -->
           <div class="col">
             <img src="img/ubicacion.png" alt="" />
@@ -366,15 +393,15 @@
               <ul>
                 <li>
                   <i class="fa-solid fa-location-dot"></i>
-                  Nicaragua 159, San Rafael Mza
+                  <div>Street 62A south, # 48-20 Porfía</div>
                 </li>
                 <li>
                   <i class="fa-solid fa-mobile-screen"></i>
-                  Llamanos: 2384 - 4343443
+                  <div>Call me: (+57) 313 3030353</div>
                 </li>
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  Email: cw@example.com
+                  <div>Email: mahe2di@gmail.com</div>
                 </li>
               </ul>
             </div>
@@ -389,11 +416,23 @@
         <i class="fa-solid fa-angles-up"></i>
       </a>
       <div class="redes">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-skype"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="#"><i class="fa-solid fa-rss"></i></a>
+        <a
+          href="https://www.linkedin.com/in/henry-peralta-brice%C3%B1o-420127225/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://github.com/HenryPB123"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.talent.soyhenry.com/app/me"
+          ><i class="fa-solid fa-h"></i
+        ></a>
+        <a href="https://wa.link/4ln2yq"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a
+          href="mailto:mahe2@gmail.com?Subject=I%20am%20interested%20about%20your%20profile"
+          ><i class="fa-solid fa-square-envelope"></i
+        ></a>
       </div>
     </footer>
 

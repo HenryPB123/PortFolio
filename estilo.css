@@ -77,6 +77,7 @@ html {
   margin: auto;
   text-align: center;
   border-radius: 40px;
+  margin-top: 5rem;
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
@@ -437,15 +438,24 @@ html {
 }
 .portfolio .galeria .proyecto {
   position: relative;
-  max-width: 340px;
-  height: fit-content;
+  max-width: 350px;
+  height: 250px;
   margin: 10px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .galeria .proyecto iframe {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
 .img_i {
-  max-width: 18rem;
-  height: 12rem;
+  max-width: 400px;
+  height: 250px;
 }
 
 .portfolio .galeria .proyecto img {
@@ -467,16 +477,33 @@ html {
   letter-spacing: 3px;
   opacity: 0;
 }
-.portfolio .galeria .proyecto .overlay h3 {
-  margin-bottom: 20px;
+.portfolio .galeria .proyecto h3 {
+  margin-bottom: 15px;
+  font-family: "Righteous";
+  font-size: x-large;
+  color: whitesmoke;
+}
+
+.video-countries {
+  height: 260px;
+  margin-bottom: 6px;
+  border: solid 5px #1cb698;
+  border-radius: 4px;
+  opacity: 0.5;
   transition: 1s;
 }
+.video-countries:hover {
+  opacity: 1;
+  transition: 1.5s;
+}
+
 .portfolio .galeria .proyecto .overlay:hover {
   opacity: 1;
 }
 .portfolio .galeria .proyecto .overlay:hover h3 {
   margin-bottom: 0px;
 }
+
 /* SECCION CONTACTO */
 .contacto {
   background-image: url(img/contact_bg.png);
