@@ -663,6 +663,14 @@ footer .arriba {
   .sobremi .fila .col {
     width: fit-content;
   }
+  .sobremi .fila .col h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .sobremi .fila .col .contenedor-intereses {
+    display: flex;
+    justify-content: center;
+  }
 
   .skills .col_a {
     display: block;
@@ -697,6 +705,7 @@ footer .arriba {
   .contacto .fila {
     display: block;
   }
+
   .contacto .fila .col {
     width: 100%;
   }
