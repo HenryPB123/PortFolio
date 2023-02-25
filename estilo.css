@@ -9,6 +9,55 @@ html {
   /* me permite deslizar cuando hago clic en los links del menu */
   scroll-behavior: smooth;
 }
+
+/* Cambio de idioma - button */
+.en {
+  color: #1cb698;
+}
+.es {
+  color: #1cb698;
+}
+.check {
+  position: relative;
+  width: 40px;
+}
+.check:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 20px;
+}
+.check:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: whitesmoke;
+  border-radius: 20px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+.check:checked:after {
+  left: 20px;
+  border: 2px solid #1cb698;
+}
+.check:checked:before {
+  background: #1cb698;
+}
+.idioma {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 400;
+}
+.idioma input {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
 /* MENU */
 .contenedor-header {
   background: #1e2326;
@@ -37,7 +86,7 @@ html {
   list-style: none;
 }
 .contenedor-header header nav ul li a {
-  font-size: larger;
+  font-size: 18px;
   text-align: none;
   color: #fff;
   margin: 0 15px;
