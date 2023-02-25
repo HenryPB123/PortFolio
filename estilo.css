@@ -153,6 +153,7 @@ html {
 }
 .sobremi .fila .col ul li {
   margin: 12px 0;
+  display: flex;
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
@@ -169,6 +170,7 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+
 .sobremi .fila .col .contenedor-intereses .interes {
   width: 100px;
   height: 100px;
