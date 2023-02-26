@@ -207,7 +207,10 @@ html {
 .sobremi .fila .col ul li strong {
   display: inline-block;
   color: #1cb698;
-  width: 130px;
+  width: 100px;
+}
+.sobremi p {
+  text-align: justify;
 }
 .sobremi .fila .col ul li span {
   background-color: #1cb698;
@@ -286,6 +289,14 @@ html {
   flex-direction: row;
   justify-content: space-around;
 }
+.con_in {
+  border-left: solid 1px whitesmoke;
+  padding-left: 4px;
+}
+.con_in_a {
+  border-right: solid 1px whitesmoke;
+  padding-right: 4px;
+}
 .con_in div {
   width: 8rem;
   color: #1cb698;
@@ -294,6 +305,16 @@ html {
   justify-content: space-between;
   margin: 5px;
   font-size: large;
+}
+.con_in_a div {
+  width: 8rem;
+  color: #1cb698;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px;
+  font-size: large;
+  text-align: end;
 }
 
 .skills {
