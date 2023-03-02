@@ -80,14 +80,16 @@ html {
   font-size: 36px;
   color: #1cb698;
   text-decoration: none;
+  margin-right: 15px;
 }
 .contenedor-header header ul {
   display: flex;
   list-style: none;
 }
 .contenedor-header header nav ul li a {
+  display: flex;
   font-size: 18px;
-  text-align: none;
+  text-align: center;
   color: #fff;
   margin: 0 15px;
   padding: 3px;
