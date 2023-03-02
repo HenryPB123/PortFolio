@@ -285,19 +285,45 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 175px;
+}
+.row_a_s {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.row_a_s .con_in {
+  border-right: solid 1px whitesmoke;
+  padding-right: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row_a_s .con_item {
+  width: 90%;
 }
 .col_a {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .con_in {
   border-left: solid 1px whitesmoke;
   padding-left: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
 .con_in_a {
   border-right: solid 1px whitesmoke;
   padding-right: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .con_in div {
   width: 8rem;
@@ -513,15 +539,20 @@ html {
 .portfolio .galeria .proyecto {
   position: relative;
   max-width: 350px;
-  height: 250px;
+  text-align: justify;
   margin: 10px;
-  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  border: solid 1px #1cb698;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 1px;
+  padding-bottom: 0;
 }
 .portfolio .galeria .proyecto iframe {
-  width: 350px;
+  width: 340px;
   height: 250px;
   margin-bottom: 5px;
   cursor: pointer;
@@ -561,8 +592,7 @@ html {
 .video-countries {
   height: 260px;
   margin-bottom: 6px;
-  border: solid 5px #1cb698;
-  border-radius: 4px;
+
   opacity: 0.5;
   transition: 1s;
 }
