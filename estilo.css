@@ -152,7 +152,7 @@ html {
   color: #fff;
   display: inline-block;
   text-decoration: none;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   border-radius: 100%;
   width: 42px;
   height: 42px;
@@ -294,7 +294,7 @@ html {
   flex-direction: column;
 }
 .row_a_s .con_in {
-  border-right: solid 1px whitesmoke;
+  /* border-right: solid 1px whitesmoke; */
   padding-right: 4px;
   text-align: center;
   display: flex;
@@ -311,7 +311,7 @@ html {
   justify-content: space-evenly;
 }
 .con_in {
-  border-left: solid 1px whitesmoke;
+  /* border-left: solid 1px whitesmoke; */
   padding-left: 4px;
   display: flex;
   flex-direction: column;
@@ -319,7 +319,7 @@ html {
 }
 
 .con_in_a {
-  border-right: solid 1px whitesmoke;
+  /* border-right: solid 1px whitesmoke; */
   padding-right: 4px;
   display: flex;
   flex-direction: column;
