@@ -861,6 +861,17 @@ footer .arriba {
   }
 }
 @media screen and (max-width: 700px) {
+  .inicio .contenido-banner {
+    border-radius: 0;
+    align-content: center;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
   .sobremi .fila {
     display: flex;
     flex-direction: column;
