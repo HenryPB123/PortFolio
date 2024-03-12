@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,31 +14,34 @@
 
     <link rel="stylesheet" href="https://icons8.com/" />
 
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="estiloDosColor.css" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css" />
   </head>
   <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
       <header>
+        <div class="logo">
+          <a href="#">Henry</a>
+        </div>
+        <div class="idioma">
+          <span class="en">ING</span>
+          <input type="checkbox" class="check" checked />
+          <span class="es">ESP</span>
+        </div>
         <nav id="nav">
           <ul>
-            <li><a href="#inicio" onclick="seleccionar()">START</a></li>
-            <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
-            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
             <li>
-              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+              <a href="#curriculum" onclick="seleccionar()">HOJA DE VIDA</a>
             </li>
 
-            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-            <li><a href="#contacto" onclick="seleccionar()">CONTACT ME</a></li>
+            <li><a href="#skills" onclick="seleccionar()"> HABILIDADES</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTÁCTAME</a></li>
           </ul>
         </nav>
-        <div class="idioma">
-          <span class="en">ENG</span>
-          <input type="checkbox" class="check" />
-          <span class="es">SPA</span>
-        </div>
         <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -52,7 +55,7 @@
           <img src="img/hero.jpeg" alt="" />
         </div>
         <h1>Henry Peralta Briceño</h1>
-        <h2>Web Full Stack Developer</h2>
+        <h2>Desarrollador Web Full Stack</h2>
         <div class="redes">
           <a
             href="https://www.linkedin.com/in/henry-peralta-brice%C3%B1o-420127225/"
@@ -74,54 +77,53 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
       <div class="contenido-seccion">
-        <h2>About Me</h2>
-        <div class="line"></div>
+        <h2>Sobre mÍ</h2>
         <p>
-          <span>Hi,</span> Since 2021 I have been interested in the field of web
-          development, I started my training and today I can say that I am a
-          <span>FULL STACK WEB DEVELOPER</span>. With a lot of effort and
-          dedication, I managed to obtain my degree in an area that is to my
-          liking. Before this process I worked in areas that are not related to
-          the area of programming. I am a Construction Technician and I worked
-          in this field until 2012, then I started a company dedicated to the
-          food production area, which I manage to this day. Working in different
-          areas allows me to have a broader field of vision than what a client
-          may need. I am a serious, honest, loyal person and above all willing
-          to take on new challenges.
+          <span>Hola, soy Henry Peralta Briceño.</span> Desde 2021 me interesé
+          en el campo del desarrollo web, comencé mi formación y hoy puedo decir
+          que soy un DESARROLLADOR WEB FULL STACK. Con mucho esfuerzo y
+          dedicación, logré obtener mi título en un área que es de mi agrado.
+          Antes de este proceso trabajé en áreas que no están relacionados con
+          el área de programación. Soy Técnico en Construcción y trabajé en este
+          campo hasta 2012, luego fundé una empresa dedicada al área de
+          producción de alimentos, que administro hasta el día de hoy. Haber
+          trabajado en diferentes áreas me permite tener un campo de visión más
+          amplio de lo que un cliente puede necesitar. Soy una persona seria,
+          honesta, leal y sobre todo dispuesto a asumir nuevos retos.
         </p>
 
         <div class="fila">
           <!-- datos personales -->
           <div class="col">
-            <h3>Personal Information</h3>
+            <h3>Información Personal</h3>
             <ul>
               <li>
-                <strong>Cell Phone</strong>
+                <strong>Teléfono Celular</strong>
                 +57 3133030353
               </li>
               <li>
-                <strong>Email</strong>
+                <strong>Correo Eléctronico</strong>
                 mahe2di@gmail.com
               </li>
 
               <li>
-                <strong>Location</strong>
+                <strong>Ubicación</strong>
                 Villavicencio, Meta, Colombia
               </li>
               <li>
-                <strong>Position</strong>
-                <span>WEB DEVELOPER FULL STACK</span>
+                <strong>Cargo</strong>
+                <span>DESARROLLADOR WEB FULL STACK</span>
               </li>
             </ul>
           </div>
 
           <!-- intereses -->
           <div class="col">
-            <h3>Interests</h3>
+            <h3>Intereses</h3>
             <div class="contenedor-intereses">
               <div class="interes">
                 <i class="fa-solid fa-headphones"></i>
-                <span>MUSIC</span>
+                <span>MÚSICA</span>
               </div>
 
               <div class="interes">
@@ -130,11 +132,11 @@
               </div>
               <div class="interes">
                 <i class="fa-solid fa-car"></i>
-                <span>CARS</span>
+                <span>AUTOS</span>
               </div>
               <div class="interes">
                 <i class="fa-solid fa-plane"></i>
-                <span>TRAVEL</span>
+                <span>VIAJES</span>
               </div>
             </div>
           </div>
@@ -146,7 +148,7 @@
           title="Start download"
         >
           <button>
-            Download CV <i class="fa-solid fa-download"></i>
+            Descargar CV <i class="fa-solid fa-download"></i>
             <span class="overlay"></span>
           </button>
         </a>
@@ -156,9 +158,7 @@
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
-        <h2>Portfolio</h2>
-        <div class="line"></div>
-
+        <h2>PORTAFOLIO</h2>
         <div class="galeria">
           <div class="proyecto">
             <div class="video-countries">
@@ -171,12 +171,12 @@
               ></iframe>
             </div>
             <h3>Countries App</h3>
-            <div class="textD">
-              This was my first project with which I approved the individual
-              project stage at Bootcamp Henry. <br />
-              It was created from zero on both the back side, as on the front
-              side. Postgresql was used for the database, Sequelize, Express,
-              React, Redux, CSS, among others.
+            <div>
+              Este fue mi primer proyecto con el que aprobé la etapa de Proyecto
+              Individual en el Bootcamp HENRY. <br />
+              Fue creado desde cero tanto del lado de Back, como en el lado de
+              Front. Se empleó PostgreSQL para la base de datos, Sequelize,
+              Express, React, Redux, CSS, entre otros.
             </div>
             <br />
           </div>
@@ -192,13 +192,13 @@
               ></iframe>
             </div>
             <h3>Food App</h3>
-            <div class="textD">
-              Application that shows us cooking recipes with the respective diet
-              to which it belongs and its preparation steps. It also allows the
-              creation of recipes. <br />
-              It was created from scratch with its database, back and front. I
-              used Postgresql, Express, Sequelize, React, Redux, among others,
-              and for its styles I used Bootstrap.
+            <div>
+              Aplicación que nos muestra recetas de cocina con la respectiva
+              dieta a la que pertenece y sus pasos de preparación. También
+              permite la creación de recetas. <br />
+              Fue creada desde cero con su base de datos, back y front. Usé
+              PostgreSQL, Express, Sequelize, React, Redux, entre otros, y para
+              sus estilos usé Bootstrap.
             </div>
             <br />
           </div>
@@ -215,14 +215,16 @@
             </div>
 
             <h3>EasyOrder App</h3>
-            <div class="textD">
-              This application is focused on the restaurant sector. It aims to
-              improve the experience between client and establishment. <br />
-              Together with a work team of six more people, this project was
-              carried out for the approval of the final stage of Bootcamp Henry.
-              <br />
-              Here we apply what learned in the Bootcamp, we also experience the
-              challenges that carry out a project in a real work environment
+            <div>
+              Esta aplicación está enfocada al sector de los restaurantes.
+              Pretende mejorar la experiencia entre cliente y
+              establecimiento.<br />
+              Junto con un Equipo de trabajo de seis personas más, se llevó a
+              cabo este proyecto para la aprobación de la Etapa Final del
+              Bootcamp Henry.<br />
+              Aquí aplicamos lo aprendido en el bootcamp, además experimentamos
+              los retos que conlleva la realización de un proyecto en un
+              ambiente de trabajo real.
             </div>
             <br />
           </div>
@@ -232,22 +234,20 @@
               <iframe
                 src="https://www.youtube.com/embed/Dz3ARPuUM08"
                 title="Pokemon-App"
-                frameborder="1"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
-              >
-                ></iframe
-              >
+              ></iframe>
             </div>
 
             <h3>Pokemons App</h3>
-            <div class="textD">
-              Application created only from the front. <br />
-              Here I did something very basic, guided by YouTube tutorials. The
-              idea was to do it with TypeScript and acquire some experience with
-              this programming language. <br />
-              The application of styles was done using SCSS.Modules, something
-              very simple.
+            <div>
+              Aplicación creada solo desde la parte del front. <br />
+              Aquí hice algo muy básico, guiado por tutoriales de YouTube. La
+              idea era hacerlo con TypeScript y adquirir un poco de experiencia
+              con este lenguaje de programación. <br />
+              La aplicación de estilos se hizo mediante scss.modules, algo muy
+              sencillo.
             </div>
             <br />
           </div>
@@ -258,22 +258,21 @@
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
       <div class="contenido-seccion">
-        <h2>Curriculum</h2>
-        <div class="line"></div>
+        <h2>Hoja de Vida</h2>
         <div class="fila">
           <div class="col izquierda">
-            <h3>Education</h3>
+            <h3>Educación</h3>
             <div class="item izq">
-              <h4>Full Stack Web Developer</h4>
-              <span class="casa">Henry - IT Education Academy</span>
+              <h4>Desarrollador Web Full Stack</h4>
+              <span class="casa">Henry - Bootcamp de Educación IT</span>
               <span class="fecha">01/2022 - 01/2023,</span>
               <div class="conectori">
                 <div class="circuloi"></div>
               </div>
             </div>
             <div class="item izq">
-              <h4>Construction Specialist Technician</h4>
-              <span class="casa">CENANFO Educational Institution</span>
+              <h4>Técnico Especialista en Contrucción</h4>
+              <span class="casa">Institución Educativa CENANFO</span>
               <span class="fecha">01/2010 - 01/2012,</span>
 
               <div class="conectori">
@@ -281,8 +280,8 @@
               </div>
             </div>
             <div class="item izq">
-              <h4>Technical Assistant Construction</h4>
-              <span class="casa">National Learning Service (SENA)</span>
+              <h4>Asistente Técnico en Construcción</h4>
+              <span class="casa">Servicio Nacional de Aprendizaje (SENA)</span>
               <span class="fecha">02/2005 - 06/2007,</span>
 
               <div class="conectori">
@@ -292,44 +291,44 @@
           </div>
 
           <div class="col derecha">
-            <h3>Work experience</h3>
+            <h3>Experiencia Laboral</h3>
             <div class="item der">
-              <h4>Full Stack Web Developer</h4>
+              <h4>Desarrollador WebFull Stack</h4>
               <span class="casa">Bootcamp Henry</span>
               <span class="fecha">01/2022 - 01/2023,</span>
               <p>
-                I created several applications where you can do processes such
-                as: Create, read, update or modify and delete data. <br />
-                I worked as a team and faced the real situations that we are
-                going to face in the field of development when it comes to carry
-                out a project
+                Creé varias aplicaciones en donde se pueden hacer procesos como:
+                Crear, leer, actualizar o modificar y borrar datos. <br />
+                Trabajé en equipo y enfrente las situaciones reales a las que
+                nos vamos a afrontar en el campo del desarrollo a la hora de
+                realizar un proyecto.
               </p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
             </div>
             <div class="item der">
-              <h4>Independent Business Owner</h4>
-              <span class="casa">Vittoria Backery</span>
-              <span class="fecha">01/2010 - Present</span>
+              <h4>Empresario Inddependiente</h4>
+              <span class="casa"> Vittoria Panadería</span>
+              <span class="fecha">01/2010 - Presente</span>
               <p>
-                I managed, directed, created processes that optimized the time
-                of production and implemented marketing strategies to increase
-                sales.
+                Administré, dirigí, creé procesos que optimizaron el tiempo de
+                producción e implementé estrategias de mercadeo para incrementar
+                las ventas.
               </p>
               <div class="conectord">
                 <div class="circulod"></div>
               </div>
             </div>
             <div class="item der">
-              <h4>Construction Assistant Technician</h4>
-              <span class="casa">Independent Worker</span>
+              <h4>Asistente Técnico en construcción</h4>
+              <span class="casa">Trabajador Independiente</span>
               <span class="fecha">01/2004 - 12/2009,</span>
               <p>
-                Hired, directed and trained personnel to carry out construction
-                work. <br />
-                Directed and supervised the execution of small works
-                architectural.
+                Contraté, dirigí y capacité personal para la realización de
+                trabajos de construcción. <br />
+                Dirigí y supervisé la ejecución de pequeñas obras
+                arquitectónicas.
               </p>
               <div class="conectord">
                 <div class="circulod"></div>
@@ -343,95 +342,83 @@
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
       <div class="contenido-seccion">
-        <div class="row_skills"><h2>Skills</h2></div>
-        <div class="line"></div>
-        <!-- <div class="col_skills"> -->
-        <div class="row_skills">
-          <div class="col_a">
+        <div class="col_skills">
+          <div class="row_skills"><h2>Habilidades</h2></div>
+          <div class="row_skills">
             <div class="col_a">
-              <div class="row_skills">
-                <h3>Technical Skills</h3>
-                <br />
-                <div class="row_a">
-                  <div class="con_in">
-                    <div>JavaScript</div>
-
-                    <div>HTML</div>
-                    <div>CSS</div>
-                    <div>Bootstrap</div>
-                    <div>Github</div>
-                    <div>Node</div>
-                  </div>
-                  <div class="con_in_a">
-                    <div>React</div>
-                    <div>React-Native</div>
-                    <div>Redux</div>
-                    <div>SQL</div>
-                    <div>MongoDB</div>
-                    <div>Sequelize</div>
+              <div class="col_a">
+                <div class="row_skills">
+                  <h3>Habilidades Técnicas</h3>
+                  <br />
+                  <div class="row_a">
+                    <div class="con_in">
+                      <div><b>JavaScript</b></div>
+                      <div><b>HTML</b></div>
+                      <div><b>CSS</b></div>
+                      <div><b>Bootstrap</b></div>
+                      <div><b>Github</b></div>
+                    </div>
+                    <div class="con_in_a">
+                      <div><b>Node</b></div>
+                      <div><b>React</b></div>
+                      <div><b>Redux</b></div>
+                      <div><b>SQL</b></div>
+                      <div><b>Sequelize</b></div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col_a">
-              <div class="row_skills">
-                <h3>Soft Skills</h3>
-                <br />
-                <div class="row_a_s">
-                  <!-- <div class="con_in_co"> -->
-                  <div>Comunication</div>
-                  <div>Work Team</div>
-                  <div>Critic Acceptance</div>
-                  <div>Decision Making</div>
-                  <div>Positive Attitude</div>
-                  <!-- </div> -->
+              <div class="col_a">
+                <div class="row_skills">
+                  <h3>Habilidades Blandas</h3>
+                  <br />
+                  <div class="row_a_s">
+                    <div class="con_in">
+                      <div class="con_item"><b>Comunicación</b></div>
+                      <div class="con_item"><b>Trabajo en Equipo</b></div>
+                      <div class="con_item"><b>Aceptación de Críticas</b></div>
+                      <div class="con_item"><b>Toma de decisiones</b></div>
+                      <div class="con_item"><b>Actitud positiva</b></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </div>
     </section>
 
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
       <div class="contenido-seccion">
-        <h2>CONTACT ME</h2>
+        <h2>CONTÁCTAME</h2>
         <div class="fila">
           <!-- Formulario -->
           <form
             action="https://formsubmit.co/mahe2di@gmail.com"
             method="POST"
             class="col"
-            name="contacto"
-            id="contacto"
           >
-            <input
-              type="text"
-              name="Name"
-              placeholder="Your Name"
-              required
-              autocomplete="given-name"
-            />
+            <input type="text" name="Name" placeholder="Tú nombre" required />
             <input
               type="text"
               name="PhoneNumber"
-              placeholder="Phone Number"
+              placeholder="Teléfono"
               required
             />
             <input type="email" name="E-mail" placeholder="E-mail" required />
-            <input type="text" name="Subject" placeholder="Subject" required />
+            <input type="text" name="Asunto" placeholder="Asunto" required />
             <textarea
               name="Message"
               id=""
               cols="20"
               rows="3"
-              placeholder="Message"
+              placeholder="Mensaje"
               required
             ></textarea>
             <button>
-              Send Message <i class="fa-solid fa-paper-plane"></i>
+              Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
               <span class="overlay"></span>
             </button>
 
@@ -450,16 +437,15 @@
               <ul>
                 <li>
                   <i class="fa-solid fa-location-dot"></i>
-                  <div>Street 62A south, # 48-20</div>
-                  <div>City: Villavicencio</div>
+                  <div>Calle 62A sur, # 48-20 Porfía</div>
                 </li>
                 <li>
                   <i class="fa-solid fa-mobile-screen"></i>
-                  <div>Call me: (+57) 313 3030353</div>
+                  <div>Llámame: (+57) 313 3030353</div>
                 </li>
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  <div>Email: mahe2di@gmail.com</div>
+                  <div>E-mail: mahe2di@gmail.com</div>
                 </li>
               </ul>
             </div>
