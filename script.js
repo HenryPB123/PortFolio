@@ -22,8 +22,10 @@ check.addEventListener("click", idioma);
 function idioma() {
   let id = check.checked;
   if (id == true) {
+    // location.href = "indexSpDos.html";
     location.href = "indexSp.html";
   } else {
+    // location.href = "indexDosColor.html";
     location.href = "index.html";
   }
 }
