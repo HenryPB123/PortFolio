@@ -839,22 +839,33 @@ footer .arriba {
 
 .image-row {
   display: flex;
-  overflow-x: auto;
-  width: 80%;
-  gap: 10px;
+  gap: 2px;
+  max-width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  overflow: unset;
+  white-space: nowrap;
+  justify-content: center;
+  position: relative;
 }
 
 .image-row img {
-  width: 150px;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
+  width: 0;
+  flex: 1;
+  margin: 0 1px;
+  /* flex: 1 0 auto; */
+  max-width: 12%;
+  height: 250px;
   object-fit: cover;
-  cursor: pointer;
+  transition: 0.6s ease;
+  opacity: 0.8;
 }
 
 .image-row img:hover {
-  transform: scale(1.5);
-  z-index: 10;
+  z-index: 10; /* Aumenta el nivel de superposición */
+  object-fit: cover;
+  max-width: 100%;
+  opacity: 1;
 }
 
 /* SECCION RESPONSIVE */

@@ -32,12 +32,12 @@ function idioma() {
 
 document.addEventListener("DOMContentLoaded", () => {
   const imageRow = document.querySelector(".image-row");
-  const imageFolder = "blogImages";
+  const imageFolder = "./blogImages/";
   const imageCount = 8; // Number of images in the folder
 
   for (let i = 1; i <= imageCount; i++) {
     const img = document.createElement("img");
-    img.src = `${imageFolder}img${i}.jpg`; // Images named as image1.jpg, image2.jpg, etc.
+    img.src = `${imageFolder}img${i}.png`; // Images named as image1.jpg, image2.jpg, etc.
     img.alt = `Image ${i}`;
     imageRow.appendChild(img);
   }
