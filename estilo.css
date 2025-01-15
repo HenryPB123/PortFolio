@@ -836,6 +836,27 @@ footer .arriba {
   line-height: 50px;
   font-size: 18px;
 }
+
+.image-row {
+  display: flex;
+  overflow-x: auto;
+  width: 80%;
+  gap: 10px;
+}
+
+.image-row img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-row img:hover {
+  transform: scale(1.5);
+  z-index: 10;
+}
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width: 980px) {
   nav {
