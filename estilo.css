@@ -852,7 +852,7 @@ footer .arriba {
 
 .image-row div {
   position: relative;
-  width: 12%;
+  width: 25%;
   height: inherit;
   padding: 5px;
   cursor: pointer;
@@ -876,7 +876,7 @@ footer .arriba {
 }
 .image-row div:hover {
   width: 300%;
-  object-fit: contain;
+  object-fit: fill;
 }
 
 /* SECCION RESPONSIVE */

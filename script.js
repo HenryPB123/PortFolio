@@ -33,9 +33,9 @@ function idioma() {
 document.addEventListener("DOMContentLoaded", () => {
   const imageRow = document.querySelector(".image-row");
   const imageFolder = "./blogImages/";
-  const imageCount = 8; // Number of images in the folder
+  const imageCount = 5; // Number of images in the folder
 
-  for (let i = 1; i <= imageCount; i++) {
+  for (let i = 2; i <= imageCount; i++) {
     const div = document.createElement("div");
     const img = document.createElement("img");
     img.src = `${imageFolder}img${i}.png`; // Images named as image1.jpg, image2.jpg, etc.
