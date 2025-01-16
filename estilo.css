@@ -837,35 +837,46 @@ footer .arriba {
   font-size: 18px;
 }
 
+/*! SECCIÖN DE GALLERÏA DE IMÄGENES */
 .image-row {
   display: flex;
-  gap: 2px;
-  max-width: 100%;
-  margin: 0 auto;
-  cursor: pointer;
-  overflow: unset;
-  white-space: nowrap;
-  justify-content: center;
-  position: relative;
-}
-
-.image-row img {
-  width: 0;
-  flex: 1;
-  margin: 0 1px;
-  /* flex: 1 0 auto; */
-  max-width: 12%;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-around;
+  gap: 5px;
+  width: 100%; /*era max-width*/
   height: 250px;
-  object-fit: cover;
-  transition: 0.6s ease;
-  opacity: 0.8;
+  margin: 10 auto;
+  overflow: hidden;
 }
 
-.image-row img:hover {
-  z-index: 10; /* Aumenta el nivel de superposición */
+.image-row div {
+  position: relative;
+  width: 12%;
+  height: inherit;
+  padding: 5px;
+  cursor: pointer;
+  transition: width 0.5s ease;
+  border-radius: 5px;
+}
+
+.image-row div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  max-width: 100%;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+.image-row div:hover img {
   opacity: 1;
+}
+.image-row div:hover {
+  width: 300%;
+  object-fit: contain;
 }
 
 /* SECCION RESPONSIVE */
