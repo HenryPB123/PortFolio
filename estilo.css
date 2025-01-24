@@ -378,13 +378,8 @@ html {
 .portfolio .galeria .proyecto .video-countries {
   width: 90%;
   margin-top: 10px;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 1s;
-}
-
-.video-countries:hover {
-  opacity: 1;
-  transition: 1.5s;
 }
 
 .portfolio .galeria .proyecto iframe {
@@ -413,9 +408,23 @@ html {
 }
 
 .portfolio .galeria .proyecto .textD {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: 200;
   line-height: 22px;
   margin: 0 15px;
+  gap: 10px;
+}
+.portfolio .galeria .proyecto .textD a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ee9b00;
+  font-size: 15px;
+  text-decoration: none;
 }
 
 /* SECCION CURRICULUM */
