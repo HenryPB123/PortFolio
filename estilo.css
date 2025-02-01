@@ -957,20 +957,31 @@ footer .arriba {
 
   .curriculum .fila {
     display: block;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 20px 10px 0px;
+    /* margin-left: 0px; */
+  }
+  .curriculum .fila .item {
+    padding: 10px;
   }
   .curriculum .fila .col {
-    width: 90%;
+    width: 110%;
   }
   .curriculum .fila .derecha {
-    margin-left: 20px;
+    margin-left: 1px;
   }
 
+  .portfolio {
+    padding: 30px 5px;
+  }
   .portfolio .galeria {
     display: block;
     width: 100%;
   }
   .portfolio .galeria .proyecto {
     max-width: 100%;
+    padding: 0px;
   }
   .portfolio .galeria .proyecto .video-countries {
     max-width: 150%;
